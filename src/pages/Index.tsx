@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import WannaPlaySection from '@/components/WannaPlaySection';
 import Trailer from '@/components/Trailer';
 import TrashUtilitySection from '@/components/TrashUtilitySection';
 import JoinTrashSection from '@/components/JoinTrashSection';
@@ -8,6 +9,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-hero">
       <main>
         <Hero />
+        <WannaPlaySection />
         <Trailer />
         <TrashUtilitySection />
         <JoinTrashSection />
