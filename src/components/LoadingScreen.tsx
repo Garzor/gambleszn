@@ -34,7 +34,7 @@ const LoadingScreen = ({ onEnter }: LoadingScreenProps) => {
           <img 
             src={gambleLogo} 
             alt="GAMBLE SZN Logo" 
-            className="h-48 sm:h-56 lg:h-64 object-contain mx-auto drop-shadow-2xl cursor-pointer hover:scale-105 transition-transform duration-200"
+            className="h-64 sm:h-72 lg:h-80 xl:h-96 object-contain mx-auto drop-shadow-2xl cursor-pointer hover:scale-105 transition-transform duration-200 gentle-tilt"
             onClick={handleEnter}
           />
         </div>

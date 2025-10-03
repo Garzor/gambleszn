@@ -186,6 +186,11 @@
     animation: bounceAround 8s ease-in-out infinite;
   }
 
+  /* Gentle tilting animation */
+  .gentle-tilt {
+    animation: gentleTilt 4s ease-in-out infinite;
+  }
+
   /* Scrolling joker cards */
   .animate-scroll-jokers {
     animation: scrollJokers 15s linear infinite;
@@ -593,6 +598,15 @@
   }
   75% {
     transform: translate(25px, 15px) rotate(7deg);
+  }
+}
+
+@keyframes gentleTilt {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
   }
 }
 
