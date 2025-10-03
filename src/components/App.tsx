@@ -10,7 +10,7 @@ const App = () => {
 
   const handleEnterSite = () => {
     // Create main audio element and play immediately on user interaction
-    const audio1 = new Audio('/newsong.mp3');
+    const audio1 = new Audio('/the-comedy-circus-clown-345516.mp3');
     audio1.loop = true;
     audio1.volume = 0.5;
     

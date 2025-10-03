@@ -1,5 +1,5 @@
 // Removed static background image import - now using video background
-import logoTrashUtility from '/ChatGPT Image Oct 2, 2025 at 03_33_40 PM.png';
+import gambleLogo from '/gamblelogoo.png';
 import char1 from '/ChatGPT Image Sep 12, 2025 at 08_16_08 PM.png';
 import char2 from '/ChatGPT Image Sep 12, 2025 at 08_21_43 PM.png';
 import char3 from '@/assets/char_3.png';
@@ -9,6 +9,7 @@ import char6 from '@/assets/char_6.png';
 import char7 from '@/assets/char_7.png';
 import char8 from '@/assets/char_8.png';
 import TrashRain from './TrashRain';
+import BouncingDice from './BouncingDice';
 
 const Hero = () => {
   const characters = [
@@ -24,6 +25,30 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
+      {/* Scrolling Logo at Top */}
+      <div className="absolute top-0 left-0 w-full h-20 bg-black/80 backdrop-blur-sm z-30 flex items-center overflow-hidden">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {/* First set of logos */}
+          {[...Array(15)].map((_, i) => (
+            <img
+              key={`set1-${i}`}
+              src={gambleLogo}
+              alt="GAMBLE SZN Logo"
+              className="h-16 mx-6 object-contain flex-shrink-0"
+            />
+          ))}
+          {/* Duplicate set for seamless loop */}
+          {[...Array(15)].map((_, i) => (
+            <img
+              key={`set2-${i}`}
+              src={gambleLogo}
+              alt="GAMBLE SZN Logo"
+              className="h-16 mx-6 object-contain flex-shrink-0"
+            />
+          ))}
+        </div>
+      </div>
+
       {/* Background Video */}
       <video 
         className="absolute inset-0 w-full h-full object-cover"
@@ -32,39 +57,24 @@ const Hero = () => {
         muted 
         playsInline
       >
-        <source src="/background.mp4" type="video/mp4" />
+        <source src="/8second_looping_chaotic_202510031527_pt2jz.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
       
       {/* Trash Rain Effect */}
       <TrashRain />
       
-      {/* Fat Mascot */}
-      <div className="absolute bottom-0 left-4 sm:left-8 lg:left-12 z-20">
-        <img
-          src="/fatmascot.png"
-          alt="Fat Mascot"
-          className="h-48 sm:h-56 lg:h-64 object-contain drop-shadow-lg hover:scale-105 transition-transform duration-200 breathe"
-        />
-      </div>
-      
-      {/* Black Mascot */}
-      <div className="absolute bottom-0 right-4 sm:right-8 lg:right-12 z-20">
-        <img
-          src="/blackmascot.png"
-          alt="Black Mascot"
-          className="h-56 sm:h-64 lg:h-72 object-contain drop-shadow-lg hover:scale-105 transition-transform duration-200 breathe"
-        />
-      </div>
+      {/* Bouncing Dice Effect */}
+      <BouncingDice />
       
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
         {/* Logo */}
         <div className="text-center mb-8">
           <img 
-            src={logoTrashUtility} 
-            alt="Trash Utility Logo" 
-            className="h-48 sm:h-64 lg:h-80 object-contain mx-auto drop-shadow-2xl breathe"
+            src={gambleLogo} 
+            alt="GAMBLE SZN Logo" 
+            className="h-48 sm:h-64 lg:h-80 object-contain mx-auto drop-shadow-2xl logo-dynamic"
           />
           
           {/* Subheading */}
@@ -75,7 +85,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://x.com/PumpCrew_" target="_blank" rel="noopener noreferrer" className="btn-pump">
-              BUY TRASH
+              <span>BUY GAMBLE</span>
             </a>
             <a href="https://x.com/PumpCrew_" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               Join Us on X

@@ -48,8 +48,8 @@ const TrashRain = () => {
           }}
         >
           <img
-            src="/TRASH.webp"
-            alt="Falling trash"
+            src="/chip.png"
+            alt="Falling poker chip"
             className="w-auto h-auto"
             style={{
               width: `${item.size}px`,
