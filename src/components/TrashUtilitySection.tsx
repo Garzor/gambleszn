@@ -54,9 +54,9 @@ const TrashUtilitySection = () => {
             }`}
           >
             <img
-              src="/fatmascot.png"
-              alt="Trash Utility Mascot"
-              className="w-full max-w-md mx-auto object-contain"
+              src="/dice.png"
+              alt="Spinning Dice"
+              className="w-full max-w-md mx-auto object-contain roulette-spin"
             />
           </div>
 
