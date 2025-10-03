@@ -176,6 +176,11 @@
     animation: logo-dynamic 3s ease-in-out infinite;
   }
 
+  /* Spinning roulette wheel */
+  .roulette-spin {
+    animation: rouletteSpin 4s linear infinite;
+  }
+
   /* Neon glow animation */
   .neon-pulse {
     animation: neonPulse 2s ease-in-out infinite alternate;
@@ -521,6 +526,15 @@
   }
   50% {
     opacity: 0.8;
+  }
+}
+
+@keyframes rouletteSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

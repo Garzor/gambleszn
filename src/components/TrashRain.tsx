@@ -54,7 +54,7 @@ const TrashRain = () => {
             style={{
               width: `${item.size}px`,
               height: `${item.size}px`,
-              opacity: 0.7,
+              opacity: 0.9,
             }}
           />
         </div>

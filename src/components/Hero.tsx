@@ -67,6 +67,15 @@ const Hero = () => {
       {/* Bouncing Dice Effect */}
       <BouncingDice />
       
+      {/* Spinning Roulette Wheel */}
+      <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 z-20">
+        <img
+          src="/ChatGPT Image Oct 3, 2025 at 04_16_11 PM.png"
+          alt="Spinning Roulette Wheel"
+          className="h-32 sm:h-40 lg:h-48 object-contain roulette-spin drop-shadow-lg"
+        />
+      </div>
+      
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
         {/* Logo */}
