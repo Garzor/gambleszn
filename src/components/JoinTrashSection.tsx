@@ -1,3 +1,5 @@
+import BouncingChips from './BouncingChips';
+
 const JoinTrashSection = () => {
   const socialLinks = [
     {
@@ -36,20 +38,17 @@ const JoinTrashSection = () => {
   ];
 
   return (
-    <section id="join-trash" className="relative bg-black pt-8 sm:pt-12 pb-16 sm:pb-24 overflow-hidden">
-      {/* Glitch/Static Effect Background */}
-      <div className="absolute inset-0">
-        <div className="glitch-static"></div>
-        <div className="glitch-lines"></div>
-      </div>
+    <section id="join-trash" className="relative bg-black pt-8 sm:pt-12 pb-16 sm:pb-24 overflow-hidden" style={{ backgroundColor: '#000000' }}>
+      {/* Bouncing Chips */}
+      <BouncingChips />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Logo */}
         <div className="mb-12 sm:mb-16">
           <img
-            src="/ChatGPT Image Oct 2, 2025 at 03_33_40 PM.png"
-            alt="TRASH UTILITY Logo"
-            className="h-40 sm:h-56 lg:h-72 xl:h-80 mx-auto object-contain breathe"
+            src="/gamblelogoo.png"
+            alt="GAMBLE SZN Logo"
+            className="h-40 sm:h-56 lg:h-72 xl:h-80 mx-auto object-contain bounce-around"
           />
         </div>
 

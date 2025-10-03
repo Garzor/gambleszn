@@ -26,19 +26,19 @@ const TrashUtilitySection = () => {
 
   const utilities = [
     {
-      icon: "🗑️",
-      title: "Trash-to-Earn",
-      description: "Earn absolutely nothing."
+      icon: "🎲",
+      title: "Rigged Dice",
+      description: "You lose on every roll, but it feels random."
     },
     {
-      icon: "⚡",
-      title: "DeFi Dumpster",
-      description: "Lightning-fast ways to lose money."
+      icon: "🎰",
+      title: "Scam Slots",
+      description: "Jackpot odds: 0.00000001%. Spin anyway."
     },
     {
-      icon: "🔥",
-      title: "BinFi Protocol",
-      description: "It all burns eventually."
+      icon: "🎡",
+      title: "Rug Roulette",
+      description: "Red, black, or straight to zero."
     }
   ];
 
@@ -66,7 +66,7 @@ const TrashUtilitySection = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-vibrant-purple/20 to-vibrant-purple/10 backdrop-blur-sm border-2 border-vibrant-purple/50 rounded-3xl p-6 shadow-2xl relative">
                 <div className="text-white text-lg sm:text-xl font-medium leading-relaxed">
-                  "You wanted utility? Here's trash instead!"
+                  "Welcome to the Casino Utility Pack - where the house always wins!"
                 </div>
                 
                 {/* Speech bubble pointer */}
