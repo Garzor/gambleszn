@@ -22,9 +22,12 @@ const MultiAudioPlayer = forwardRef<HTMLAudioElement, MultiAudioPlayerProps>(({
         if (index === 0) {
           // Background music at normal volume
           audio.volume = isMuted ? 0 : volume * 0.6; // 60% of slider volume
+        } else if (index === 1) {
+          // Level-up sound at lower volume
+          audio.volume = isMuted ? 0 : Math.min(volume * 0.3, 1.0); // 30% of slider volume, capped at 1.0
         } else {
-          // Trashu track louder
-          audio.volume = isMuted ? 0 : Math.min(volume * 1.2, 1.0); // 120% of slider volume, capped at 1.0
+          // Slot machine sound at very low volume
+          audio.volume = isMuted ? 0 : Math.min(volume * 0.2, 1.0); // 20% of slider volume, capped at 1.0
         }
       }
     });
