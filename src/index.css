@@ -191,6 +191,7 @@
     animation: gentleTilt 4s ease-in-out infinite;
   }
 
+
   /* Scrolling joker cards */
   .animate-scroll-jokers {
     animation: scrollJokers 15s linear infinite;
@@ -609,6 +610,7 @@
     transform: rotate(3deg);
   }
 }
+
 
 @keyframes scrollJokers {
   0% {
